@@ -9,8 +9,8 @@ jQuery(function($) {
     // on scroll,
     $(window).on('scroll', function() {
         // we round here to reduce a little workload
-        stop = Math.round($(window).scrollTop());
-        if (stop > mainbottom) {
+        // stop = Math.round($(window).scrollTop());
+        if ($(window).scrollTop() > 80) {
             $('.navbar').addClass('past-main');
             $('.navbar').addClass('effect-main')
         } else {
@@ -57,8 +57,24 @@ jQuery(function($) {
     })(jQuery); // End of use strict
 
 
-    // Wow Init
-    new WOW().init();
+    // Helper function for add element box list in WOW
+    WOW.prototype.addBox = function(element) {
+        this.boxes.push(element);
+    };
+
+    // Init WOW.js and get instance
+    var wow = new WOW();
+    wow.init();
+
+    // Attach scrollSpy to .wow elements for detect view exit events,
+    // then reset elements and add again for animation
+    $('.wow').on('scrollSpy:exit', function() {
+        $(this).css({
+            'visibility': 'hidden',
+            'animation-name': 'none'
+        }).removeClass('animated');
+        wow.addBox(this);
+    }).scrollSpy();
 
     // Initial Page
     $(document).ready(function() {
@@ -66,6 +82,7 @@ jQuery(function($) {
         $('#nav-marbot-hamburger').click(function() {
             $(this).toggleClass('open');
         });
+
     });
 
 });
