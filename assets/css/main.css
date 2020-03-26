@@ -949,6 +949,18 @@ p.small-text {
 		padding: 7px
 	}
 
+	.project-title h3{
+		font-size: 20px;
+	}
+
+	.project-title h6 {
+		font-size: 14px;
+	}
+
+	.project-title {
+		bottom: 5px;
+	}
+
 }
 
 /* Extra small, small & medium devices (phones & landscape tablets) */
