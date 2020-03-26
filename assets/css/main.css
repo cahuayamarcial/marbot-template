@@ -2,11 +2,31 @@
  * Template Marbot 1.0 
  * By @cahuayamarcial - http://marbot.bo - @marbot.bo
  */
+
+.overlay:before {
+	content: ""
+}
+
+
+::-moz-selection {
+	background: #ff214f;
+	text-shadow: none;
+	color: #fff
+}
+
+::selection {
+	background: #ff214f;
+	text-shadow: none;
+	color: #fff
+}
+
+
 body {
 	line-height: 1;
 	overflow-x: hidden;
 	background: #f1f6fd;
 }
+
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Nunito Sans', sans-serif;
@@ -28,6 +48,17 @@ p{
 	color: #718096;
 	line-height: 1.7;
 }
+
+p {
+	font-size: 18px;
+	line-height: 32px;
+}
+
+.white-color {
+	color: #fff
+}
+
+
 a {
     outline:none;
 	color: inherit;
@@ -258,39 +289,55 @@ body {
 /*-------------------------------------------------------------------
  ---------------------------- Paddings ------------------------------
  -------------------------------------------------------------------*/
-.p-15 { padding: 15px; }
-.p-20 { padding: 20px; }
-.p-25 {	padding: 25px; }
-.p-30 {	padding: 30px; }
-.p-35 {	padding: 35px; }
 
-.pt-15 { padding-top: 15px; }
-.pt-20 { padding-top: 20px; }
-.pt-25 { padding-top: 25px; }
-.pt-30 { padding-top: 30px; }
-.pt-35 { padding-top: 35px; }
+.pl-5 { padding-left: 5px }
+.pl-10 { padding-left: 10px }
+.pl-15 { padding-left: 15px }
+.pl-20 { padding-left: 20px }
+.pl-25 { padding-left: 25px }
+.pl-30 { padding-left: 30px }
+.pl-35 { padding-left: 35px }
+.pl-40 { padding-left: 40px }
+.pl-45 { padding-left: 45px }
+.pl-50 { padding-left: 50px }
+.pl-60 { padding-left: 60px }
 
-.pb-15 { padding-bottom: 15px; }
-.pb-20 { padding-bottom: 20px; }
-.pb-25 { padding-bottom: 25px; }
-.pb-30 { padding-bottom: 30px; }
-.pb-35 { padding-bottom: 35px; }
+.pr-5 { padding-right: 5px }
+.pr-10 { padding-right: 10px }
+.pr-15 { padding-right: 15px }
+.pr-20 { padding-right: 20px }
+.pr-25 { padding-right: 25px }
+.pr-30 { padding-right: 30px }
+.pr-35 { padding-right: 35px }
+.pr-40 { padding-right: 40px }
+.pr-45 { padding-right: 45px }
+.pr-50 { padding-right: 50px }
+.pr-60 { padding-right: 60px }
 
-.pl-15 { padding-left: 15px; }
-.pl-20 { padding-left: 20px; }
-.pl-25 { padding-left: 25px; }
-.pl-30 { padding-left: 30px; }
-.pl-35 { padding-left: 35px; }
+.plr-10 { padding-left: 10px;padding-right: 10px }
+.plr-15 { padding-left: 15px;padding-right: 15px }
+.plr-20 { padding-left: 20px;padding-right: 20px }
+.plr-50 { padding-left: 50px;padding-right: 50px }
+.plr-150 { padding-left: 150px;padding-right: 150px }
+.plr-260 { padding-left: 260px;padding-right: 260px }
 
-.pr-15 { padding-right: 15px; }
-.pr-20 { padding-right: 20px; }
-.pr-25 { padding-right: 25px; }
-.pr-30 { padding-right: 30px; }
-.pr-35 { padding-right: 35px; }
+.ptb-5 { padding-top: 5px;padding-bottom: 5px }
+.ptb-10 { padding-top: 10px;padding-bottom: 10px }
+.ptb-15 { padding-top: 15px;padding-bottom: 15px }
+.ptb-20 { padding-top: 20px;padding-bottom: 20px }
+.ptb-25 { padding-top: 25px;padding-bottom: 25px }
+.ptb-30 { padding-top: 30px;padding-bottom: 30px }
+.ptb-35 { padding-top: 35px;padding-bottom: 35px }
+.ptb-40 { padding-top: 40px;padding-bottom: 40px }
+.ptb-45 { padding-top: 45px;padding-bottom: 45px }
+.ptb-50 { padding-top: 50px;padding-bottom: 50px }
+.ptb-60 { padding-top: 60px;padding-bottom: 60px; }
+.ptb-70 { padding-top: 70px;padding-bottom: 70px; }
+.ptb-80 { padding-top: 80px;padding-bottom: 80px; }
+.ptb-100 { padding-top: 100px;padding-bottom: 100px }
+.ptb-120 { padding-top: 120px;padding-bottom: 120px }
+.ptb-200  {padding-top: 200px;padding-bottom: 200px }
 
-.ptb-50{ padding-top: 50px;padding-bottom: 50px; }
-.ptb-60{ padding-top: 60px;padding-bottom: 60px; }
-.ptb-70{ padding-top: 70px;padding-bottom: 70px; }
 
 
 
@@ -382,6 +429,17 @@ div.shape {
 }
 
 
+.col-xs-12 {
+    width: 100%;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 
 /* Extra small, small & medium devices (phones & landscape tablets) */
 @media (max-width: 992px) {
@@ -451,6 +509,17 @@ div.shape {
 	background: #05074e!important;
 }
 
+.white-bg {
+	background-color: #fff
+}
+
+.black-bg {
+	background-color: #030d27
+}
+
+.gray-bg {
+	background-color: #f4f4f4
+}
 
 
 
@@ -675,6 +744,129 @@ p.small-text {
 
 
 /*-------------------------------------------------------------------
+ ----------------------------- Portfolio ----------------------------
+ -------------------------------------------------------------------*/
+
+.overlay {
+	position: relative
+}
+
+.overlay:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(65, 34, 142, .9);
+	transition: all .3s ease 0s
+}
+
+.overlay {
+	position: relative;
+	z-index: 2
+}
+
+
+.portfolio-area .portfolio-grid {
+	margin: 0 -15px -30px
+}
+
+.portfolio-area .grid-item,
+.portfolio-area .portfolio-item {
+	margin-bottom: 30px;
+	padding: 0 15px
+}
+
+.portfolio-area .portfolio-item {
+	float: left
+}
+
+.single-portfolio.overlay::before {
+	opacity: 0;
+	-webkit-transition: all .5s ease 0s;
+	-o-transition: all .5s ease 0s;
+	transition: all .5s ease 0s;
+	-webkit-transform: scaleX(1.2);
+	-ms-transform: scaleX(1.2);
+	transform: scaleX(1.2)
+}
+
+.project-title h3,
+.project-title h6,
+.style2 .single-service {
+	-webkit-transition: all .3s ease 0s;
+	-o-transition: all .3s ease 0s
+}
+
+.single-portfolio.overlay:hover::before {
+	opacity: 1;
+	-webkit-transform: scaleX(1);
+	-ms-transform: scaleX(1);
+	transform: scaleX(1)
+}
+
+.project-title {
+	bottom: 35px;
+	position: absolute;
+	padding: 0px 10px;
+	z-index: 2
+}
+
+.small .project-title {
+	bottom: 20px;
+	left: 30px
+}
+
+.project-title h3 {
+	font-weight: 700
+}
+
+.project-title h3,
+.project-title h6 {
+	opacity: 0;
+	position: relative;
+	top: 20px;
+	transition: all .3s ease 0s
+}
+
+.project-title h6 {
+	line-height: 24px;
+	margin-bottom: 0;
+	-webkit-transition-delay: 0s;
+	-o-transition-delay: 0s;
+	transition-delay: 0s
+}
+
+.single-portfolio:hover .project-title h6 {
+	-webkit-transition-delay: .2s;
+	-o-transition-delay: .2s;
+	transition-delay: .2s
+}
+
+.single-portfolio:hover .project-title h3,
+.single-portfolio:hover .project-title h6 {
+	opacity: 1;
+	top: 0
+}
+
+
+
+.grid-item {
+	margin-bottom: 10px;
+	padding: 0 5px
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px){
+	.portfolio-area .portfolio-item {
+		margin-bottom: 15px;
+		padding: 0 7px;
+	}
+}
+
+
+
+
+/*-------------------------------------------------------------------
  ---------------------------- Responsive ----------------------------
  -------------------------------------------------------------------*/
 
@@ -752,6 +944,11 @@ p.small-text {
 		color: #fff;
 		text-align: center;
 	}
+
+	.padding-m{
+		padding: 7px
+	}
+
 }
 
 /* Extra small, small & medium devices (phones & landscape tablets) */
@@ -760,3 +957,37 @@ p.small-text {
 		padding: 125px 0 100px 0;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
