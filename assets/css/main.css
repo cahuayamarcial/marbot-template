@@ -361,6 +361,47 @@ div.shape {
     top: -89px;
     z-index: -1;
 }
+
+
+.navbar-nav .whatsapp .whats small {
+    display: block;
+    color: #8093a0;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 0px;
+	text-align: left;
+}
+.navbar-nav .whatsapp .whats b {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+
+.whatsapp{
+	padding-left: 40px;
+}
+
+
+
+/* Extra small, small & medium devices (phones & landscape tablets) */
+@media (max-width: 992px) {
+	.whatsapp{
+		display: none;
+		padding-left: 0px;
+	}
+}
+
+.info-whatsapp{
+	width: 180px; 
+	margin:0 auto;
+	text-align: left;
+}
+
+.info-whatsapp span{
+	font-size: 14px;
+    font-weight: 600;
+    color: #777777;
+}
 /*------------------------------------------------------------------
  --------------------------- Text colors ---------------------------
  ------------------------------------------------------------------*/
@@ -603,6 +644,27 @@ p.small-text {
     z-index: 999;
 }
 
+/*------------------------------------------------------------------
+ ----------------------------- Buttom Info -------------------------
+ ------------------------------------------------------------------*/
+
+.btn-information{
+    position: fixed;
+    right: 22px;
+    bottom: 0px;
+    height: auto;
+    width: auto;
+    background: #00cc71;
+    padding: 10px 40px;
+    border-radius: 5px 5px 0px 0px;
+    z-index: 999;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    border-top: 4px solid #00dd7b;
+}
+
+
 .box-shadow {
     box-shadow: 0 0 8px rgba(0,0,0,.15);
     -moz-box-shadow: 0 0 8px rgba(0,0,0,.15);
@@ -610,7 +672,6 @@ p.small-text {
     -ms-box-shadow: 0 0 8px rgba(0,0,0,.15);
     -o-box-shadow: 0 0 8px rgba(0,0,0,.15);
 }
-
 
 
 /*-------------------------------------------------------------------
@@ -646,6 +707,8 @@ p.small-text {
 }
 
 
+
+
 /* Extra small, small & medium devices (phones) */
 @media (max-width: 768px) {
 	.navbar-nav .nav-item {
@@ -672,6 +735,22 @@ p.small-text {
 	}
 	.rmb-15{
 		margin-bottom: 15px!important;
+	}
+	.whatsapp{
+		display: block;
+	}
+	.info-whatsapp{
+		margin-top: 30px;
+	}
+
+	.btn-information{
+		right: 0px;
+		bottom: 0px;
+		width: 100%;
+		padding: 10px 40px;
+		border-radius: 0px;
+		color: #fff;
+		text-align: center;
 	}
 }
 
