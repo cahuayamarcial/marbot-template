@@ -654,14 +654,14 @@ p.small-text {
     bottom: 0px;
     height: auto;
     width: auto;
-    background: #00cc71;
+    background: #010149;
     padding: 10px 40px;
     border-radius: 5px 5px 0px 0px;
     z-index: 999;
     color: #fff;
     font-weight: 600;
     font-size: 18px;
-    border-top: 4px solid #00dd7b;
+    border-top: 3px solid #4646a9;
 }
 
 
