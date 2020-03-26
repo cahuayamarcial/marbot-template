@@ -49,10 +49,6 @@ p{
 	line-height: 1.7;
 }
 
-p {
-	font-size: 18px;
-	line-height: 32px;
-}
 
 .white-color {
 	color: #fff
@@ -955,10 +951,12 @@ p.small-text {
 
 	.project-title h6 {
 		font-size: 14px;
+		line-height: 1.3;
 	}
 
 	.project-title {
-		bottom: 5px;
+		bottom: 20px;
+		
 	}
 
 }
