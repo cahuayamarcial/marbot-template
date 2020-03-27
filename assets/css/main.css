@@ -405,7 +405,17 @@ div.shape {
     z-index: -1;
 }
 
-
+div.shape-works {
+    left: -15px;
+    position: absolute!important;
+    right: 0;
+    top: -60px;
+    z-index: 0;
+}
+.inherit{
+	position: inherit;
+}
+    
 .navbar-nav .whatsapp .whats small {
     display: block;
     color: #8093a0;
@@ -495,7 +505,7 @@ div.shape {
 
 
 /*------------------------------------------------------------------
- ---------------------------- Background ---------------------------
+ ---------------------------- Backgrounds ---------------------------
  ------------------------------------------------------------------*/
 .theme-bg {
     background-color: #41228e;
@@ -972,6 +982,24 @@ p.small-text {
 
 
 
+.section-title::after, .section-title::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    height: 2px;
+    background: #ff214f;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.section-title::before {
+    bottom: 0;
+    width: 60px;
+}
+
+.section-title::after {
+    bottom: -5px;
+    width: 30px;
+}
 
 
 
@@ -999,5 +1027,49 @@ p.small-text {
 
 
 
+.area-clients {
+    margin: 0;
+    padding-bottom: 0;
+    display: block;
+    clear: both;
+    text-align: center;
+    position: relative;
+}
+
+.site-white-section, .site-dark-section {
+    margin: 0;
+    padding: 100px 0;
+    width: 100%;
+    clear: both;
+    display: block;
+    text-align: center;
+    background: white;
+}
+
+.area-clients figure {
+    display: inline-block;
+    float: none;
+    overflow: hidden;
+    margin: 0 0 30px 0;
+    padding: 0;
+    transition: 400ms ease;
+    transition-property: opacity;
+}
+
+figure {
+    overflow: hidden;
+    max-width: 100%;
+    display: block;
+}
 
 
+.area-clients .client-logo figure img:hover, .area-clients .client-logo figure:hover {
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.area-clients .client-logo figure img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
