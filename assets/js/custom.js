@@ -24,6 +24,7 @@ jQuery(function($) {
     $(document).on('click.nav', '.navbar-collapse.in', function(e) {
         if ($(e.target).is('a')) {
             $(this).removeClass('in').addClass('collapse');
+            
         }
     });
 
@@ -47,6 +48,7 @@ jQuery(function($) {
         // Closes responsive menu when a scroll trigger link is clicked
         $('.marbot-scroll-trigger').on('click', function() {
             $('.navbar-collapse').collapse('hide');
+            
         });
         // Activate scrollspy to add active class to navbar items on scroll
         $('body').scrollspy({
@@ -80,7 +82,12 @@ jQuery(function($) {
     $(document).ready(function() {
         // Menu
         $('#nav-marbot-hamburger').click(function() {
-            $(this).toggleClass('open');
+            $(this).toggleClass('open')
+            if ($('#btnMenu').attr('aria-expanded') === "true") {
+                $('.navbar').removeClass('border-navbar')
+            } else {
+                $('.navbar').addClass('border-navbar')
+            }
         });
 
     });
