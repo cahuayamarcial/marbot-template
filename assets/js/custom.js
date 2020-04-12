@@ -60,9 +60,9 @@ jQuery(function($) {
 
 
     // Helper function for add element box list in WOW
-    // WOW.prototype.addBox = function(element) {
-    //     this.boxes.push(element);
-    // };
+    WOW.prototype.addBox = function(element) {
+        this.boxes.push(element);
+    };
 
     // Init WOW.js and get instance
     var wow = new WOW();
