@@ -31,8 +31,31 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/animate.css"/>
     <link rel="stylesheet" href="assets/css/main.css" media="all"/>
+    <style>
+      .preloader {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 9999;
+          /* background-image: url('../images/default.gif'); */
+          background-repeat: no-repeat; 
+          background-color: #FFF;
+          background-position: center;
+        }
+    </style>
   </head>
   <body>
+    <div class="preloader">
+      <div class="inner" style="width: 121px; height: 121px;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#fff;display:block;" width="121px" height="121px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+<circle cx="50" cy="50" r="30" stroke="#ff214f" stroke-width="10" fill="none"></circle>
+<circle cx="50" cy="50" r="30" stroke="#ffffff" stroke-width="8" stroke-linecap="round" fill="none" transform="rotate(112.717 50 50)">
+  <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" values="0 50 50;180 50 50;720 50 50" keyTimes="0;0.5;1"></animateTransform>
+  <animate attributeName="stroke-dasharray" repeatCount="indefinite" dur="1s" values="18.84955592153876 169.64600329384882;94.2477796076938 94.24777960769377;18.84955592153876 169.64600329384882" keyTimes="0;0.5;1"></animate>
+</circle>
+</svg></div>
+    </div>
     <div class="wrapper">
       <nav class="navbar navbar-expand-md fixed-top">
         <div class="container">
@@ -56,7 +79,7 @@
               <li class="nav-item"><a class="nav-link marbot-scroll-trigger" href="#">Nosotros</a></li>
               <li class="nav-item"><a class="nav-link marbot-scroll-trigger" href="#">Contacto</a></li>
               <li class="nav-item"><a class="nav-link marbot-scroll-trigger" href="#">Blog</a></li>
-              <li class="whatsapp">
+              <li class="nav-item whatsapp">
                 <a class="whats" href="https://wa.me/59176768465?text=Hola estoy interesado en conocer los servicios." target="_blank">
                   <div class="info-whatsapp">
                     <img class="mr-3" style="float: left;" src="assets/images/icons/whatsapp.svg" width="40"/>
@@ -202,7 +225,7 @@
                 <img src="assets/images/bg-3.png" alt="Shape">
               </div>
               <h2 class="tw-7 inherit section-title pb-3">Trabajos <span class="text-primary">Recientes</span></h2>
-              <!-- <p class="font-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, reiciendis odit? </p> -->
+              <p class="font-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, reiciendis odit? </p>
             </div>
           </div>
 					<div class="row padding-m pt-3">
@@ -210,8 +233,8 @@
                 <div class="single-portfolio overlay">
                   <img src="assets/images/portfolio/1.jpg" alt="Portfolio Thumbnail">
                   <div class="project-title">
-                    <h3 class="white-color mb-10">Paper Hot Cup</h3>
-                    <h6 class="white-color">If you are going to use a passage of <br>Lorem Ipsum, you need</h6>
+                    <h3 class="white-color mb-10">Project Title</h3>
+                    <h6 class="white-color">Description proyect, lorem imsum dolor sit</h6>
                   </div>
                 </div>
               </div>
@@ -219,8 +242,8 @@
                 <div class="single-portfolio overlay">
                   <img src="assets/images/portfolio/2.jpg" alt="Portfolio Thumbnail">
                   <div class="project-title">
-                    <h3 class="white-color mb-10">Note Pad Free</h3>
-                    <h6 class="white-color">If you are going to use a passage of <br>Lorem Ipsum, you need</h6>
+                    <h3 class="white-color mb-10">Project Title</h3>
+                    <h6 class="white-color">Description proyect, lorem imsum dolor sit</h6>
                   </div>
                 </div>
               </div>
@@ -228,8 +251,8 @@
                 <div class="single-portfolio overlay">
                   <img src="assets/images/portfolio/3.jpg" alt="Portfolio Thumbnail">
                   <div class="project-title">
-                    <h3 class="white-color mb-10">Square Booklet</h3>
-                    <h6 class="white-color">If you are going to use a passage of <br>Lorem Ipsum, you need</h6>
+                    <h3 class="white-color mb-10">Project Title</h3>
+                    <h6 class="white-color">Description proyect, lorem imsum dolor sit</h6>
                   </div>
                 </div>
               </div>
@@ -237,8 +260,8 @@
                 <div class="single-portfolio overlay">
                   <img src="assets/images/portfolio/4.jpg" alt="Portfolio Thumbnail">
                   <div class="project-title">
-                    <h3 class="white-color mb-10">Book Brochure</h3>
-                    <h6 class="white-color">If you are going to use a passage of <br>Lorem Ipsum, you need</h6>
+                    <h3 class="white-color mb-10">Project Title</h3>
+                    <h6 class="white-color">Description proyect, lorem imsum dolor sit</h6>
                   </div>
                 </div>
               </div>
@@ -247,7 +270,7 @@
                   <img src="assets/images/portfolio/5.jpg" alt="Portfolio Thumbnail">
                   <div class="project-title">
                     <h3 class="white-color mb-10">Paper Brand</h3>
-                    <h6 class="white-color">If you are going to use a passage of <br>Lorem Ipsum, you need</h6>
+                    <h6 class="white-color">Description proyect, lorem imsum dolor sit</h6>
                   </div>
                 </div>
               </div>
@@ -255,8 +278,8 @@
                 <div class="single-portfolio overlay">
                   <img src="assets/images/portfolio/6.jpg" alt="Portfolio Thumbnail">
                   <div class="project-title">
-                    <h3 class="white-color mb-10">White, Red Pad</h3>
-                    <h6 class="white-color">If you are going to use a passage of <br>Lorem Ipsum, you need</h6>
+                    <h3 class="white-color mb-10">Project Title</h3>
+                    <h6 class="white-color">Description proyect, lorem imsum dolor sit</h6>
                   </div>
                 </div>
               </div>
@@ -264,8 +287,8 @@
                 <div class="single-portfolio overlay">
                   <img src="assets/images/portfolio/7.jpg" alt="Portfolio Thumbnail">
                   <div class="project-title">
-                    <h3 class="white-color mb-10">Folded Paper</h3>
-                    <h6 class="white-color">If you are going to use a passage of <br>Lorem Ipsum, you need</h6>
+                    <h3 class="white-color mb-10">Project Title</h3>
+                    <h6 class="white-color">Description proyect, lorem imsum dolor sit</h6>
                   </div>
                 </div>
               </div>
@@ -273,8 +296,8 @@
                 <div class="single-portfolio overlay">
                   <img src="assets/images/portfolio/8.jpg" alt="Portfolio Thumbnail">
                   <div class="project-title">
-                    <h3 class="white-color mb-10">Caffee Cup</h3>
-                    <h6 class="white-color">If you are going to use a passage of <br>Lorem Ipsum, you need</h6>
+                    <h3 class="white-color mb-10">Project Title</h3>
+                    <h6 class="white-color">Description proyect, lorem imsum dolor sit</h6>
                   </div>
                 </div>
               </div>
@@ -322,8 +345,8 @@
                         Escríbenos
                     </h6>
                     <address>
-                        <p class="m-5px-b"><a class="theme2nd-color border-bottom-1 border-color-theme2nd" href="mailto:hola@marbot.bo">hola@marbot.bo</a></p>
-                        <p class="m-5px-b"><a class="theme2nd-color border-bottom-1 border-color-theme2nd" href="tel:+591 75758465">+591 75758465</a></p>
+                        <p class="m-5px-b"><a class="theme2nd-color border-bottom-1 border-color-theme2nd" href="mailto:hola@marbot.bo" rel="noreferrer noopener">hola@marbot.bo</a></p>
+                        <p class="m-5px-b"><a class="theme2nd-color border-bottom-1 border-color-theme2nd" href="tel:+591 75758465" rel="noreferrer noopener">+591 75758465</a></p>
                     </address>
                 </div>
             </div>
@@ -347,7 +370,11 @@
       <svg xmlns="http://www.w3.org/2000/svg" version="1" width="35" height="35" viewBox="0 0 90 90"><path d="M90 44a44 44 0 0 1-66 38L0 90l8-24A44 44 0 0 1 46 0c24 0 44 20 44 44zM46 7C25 7 9 24 9 44c0 8 2 15 7 21l-5 14 14-4a37 37 0 0 0 58-31C83 24 66 7 46 7zm22 47l-2-1-7-4-3 1-3 4h-3c-1 0-4-1-8-5-3-3-6-6-6-8v-2l2-2 1-1v-2l-4-8c0-2-1-2-2-2h-2l-3 1c-1 1-4 4-4 9s4 11 5 11c0 1 7 12 18 16 11 5 11 3 13 3s7-2 7-5l1-5z" fill="#FFF"/></svg>
     </a>
 
-    <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script> -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/popper.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script src="https://gitcdn.xyz/repo/thesmart/jquery-scrollspy/0.1.3/scrollspy.js"></script>
@@ -356,7 +383,10 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="assets/js/custom.js"></script>
     <script>
-  AOS.init();
-</script>
+      $(window).load(function() {
+          $('.preloader').fadeOut('slow')
+      })
+      AOS.init()
+    </script>
   </body>
 </html>
