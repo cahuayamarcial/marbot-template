@@ -58,38 +58,26 @@ jQuery(function($) {
 
     })(jQuery); // End of use strict
 
-
-    // Helper function for add element box list in WOW
-    WOW.prototype.addBox = function(element) {
-        this.boxes.push(element);
-    };
-
     // Init WOW.js and get instance
     var wow = new WOW();
     wow.init();
+    
+    AOS.init()
+    
 
-    // Attach scrollSpy to .wow elements for detect view exit events,
-    // then reset elements and add again for animation
-    $('.wow').on('scrollSpy:exit', function() {
-        $(this).css({
-            'visibility': 'hidden',
-            'animation-name': 'none'
-        }).removeClass('animated');
-        wow.addBox(this);
-    }).scrollSpy();
+});
 
-    // Initial Page
-    $(document).ready(function() {
-        // Menu
-        $('#nav-marbot-hamburger').click(function() {
-            $(this).toggleClass('open')
-            if ($('#btnMenu').attr('aria-expanded') === "true") {
-                $('.navbar').removeClass('border-navbar')
-            } else {
-                $('.navbar').addClass('border-navbar')
-            }
-        });
 
+// Initial Page
+$(document).ready(function() {
+    // Menu
+    $('#nav-marbot-hamburger').click(function() {
+        $(this).toggleClass('open').siblings().removeClass('open');
+        if ($('#btnMenu').attr('aria-expanded') == "true") {
+            $('.navbar').removeClass('border-navbar')
+        } else {
+            $('.navbar').addClass('border-navbar')
+        }
     });
 
 });
