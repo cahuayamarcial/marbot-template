@@ -380,6 +380,10 @@ div.shape {
     z-index: -1;
 }
 
+div.shape.contact {
+    left: 161px!important;
+}
+
 div.shape-works {
     left: -15px;
     position: absolute!important;
@@ -420,6 +424,18 @@ div.shape-works {
 	padding-left: 40px;
 }
 
+
+.form-control.fp{
+	padding: .7rem .7rem!important;
+}
+
+.form-control.fp:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #ff2964;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 41, 100, 0.25);
+}
 
 /* Extra small, small & medium devices (phones & landscape tablets) */
 @media (max-width: 992px) {

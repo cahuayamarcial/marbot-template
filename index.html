@@ -264,6 +264,62 @@
         </div> <!-- /.agn-our-gallery -->
     </section>
 
+    <section class="contact-blog ptb-60 ">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mtb-15">
+                    <div class="shape">
+                        <img src="assets/images/bg-2.png" alt="Shape">
+                    </div>
+                    <h2 class="tw-7 mb-20">Nuestros <span class="text-primary">Blog</span></h2>
+                    <!-- <p class="font-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia inventore earum velit nemo, perspiciatis, explicabo possimus.</p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-area ptb-60  white-bg">
+
+        <div class="container text-center">
+            <div class="row justify-content-center pb-4">
+                <div class="col-lg-6">
+                    <div class="shape-works">
+                        <img src="assets/images/bg-3.png" alt="Shape">
+                    </div>
+                    <h2 class="tw-7 inherit section-title pb-3">Contacte con <span class="text-primary">Nosotros</span></h2>
+                    <!-- <p class="font-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, reiciendis odit? </p> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3>No dude en contactarnos para cualquier tipo de información.</h3>
+                </div>
+                <div class="col-lg-6">
+                    <form action="#">
+                        <div class="form-group">
+                            <input type="text" class="form-control fp" placeholder="Nombre Completo">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control fp" placeholder="Teléfono">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control fp" placeholder="Correo Electrónico">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="" class="form-control fp" rows="4" placeholder="Mensaje"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary ptb-10 tw-6 mr-1">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- <button class="btn btn-information box-shadow">
         Solicitar Información
     </button> -->
@@ -281,90 +337,9 @@
     <script type="text/javascript" src="assets/js/plugins.js"></script>
     <script type="text/javascript" src="assets/js/parallax.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script src="assets/plugins/owl-carousel/owl.carousel.min.js"></script>
-
     <script src="assets/plugins/fancybox/jquery.fancybox.min.js"></script>
-
     <script type="text/javascript" src="assets/js/custom.js"></script>
-
-
-    <script>
-
-
-(function($) {
-    "use strict";
-    
-
-
-    
-    $(document).on ('ready', function (){
-        // Gallery Slider
-        var tSlider = $ (".gallery-slider");
-        if(tSlider.length) {
-            tSlider.owlCarousel({
-              loop:true,
-              nav:true,
-              navText: ["<i class='flaticon-back'></i>" , "<i class='flaticon-next'></i>"],
-            // navText: ["<i class='flaticon-back'><-</i>" , "<i class='flaticon-next'>-></i>"],
-              dots:false,
-              autoplay:true,
-              autoplayTimeout:4000,
-              smartSpeed:1200,
-              autoplayHoverPause:true,
-              lazyLoad:true,
-              responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:2
-                    },
-                    1100:{
-                        items:3
-                    },
-                    1550:{
-                        items:4,
-                    }
-                },
-          });
-        }
-    });
-
-    
-
-    $(window).on ('load', function (){
-
-        // Preloader
-        $('#ctn-preloader').fadeOut(); 
-        $('#preloader').delay(350).fadeOut('slow'); 
-        $('body').delay(350).css({'overflow':'visible'});
-
-
-        // Fancybox
-        var fancy = $ (".fancybox");
-        if(fancy.length) {
-            fancy.fancybox({
-                arrows: true,
-                buttons: [
-                    "zoom",
-                    //"share",
-                    "slideShow",
-                    //"fullScreen",
-                    //"download",
-                    "thumbs",
-                    "close"
-                ],
-                animationEffect: "zoom-in-out",
-                transitionEffect: "zoom-in-out",
-            });
-        }
-
-    });
-
-    
-})(jQuery);
-    </script>
 </body>
 
 </html>
