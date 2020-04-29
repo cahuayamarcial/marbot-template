@@ -1303,11 +1303,13 @@ a.read-more:hover i {
 
 
 .date-blog{
-	position: absolute;
+	color: #ff2964;
+	margin-top: 10px;
+	/* position: absolute;
     background: #22196c;
     color: #fff;
     padding: 6px;
-    top: 16px;
+    top: 16px; */
 }
 
 .blog-post a{
