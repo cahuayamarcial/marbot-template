@@ -437,6 +437,13 @@ div.shape-works {
     box-shadow: 0 0 0 0.2rem rgba(255, 41, 100, 0.25);
 }
 
+
+/*-------------------------------------------------------------------
+-------------------------------- Blog -------------------------------
+-------------------------------------------------------------------*/
+
+
+
 /* Extra small, small & medium devices (phones & landscape tablets) */
 @media (max-width: 992px) {
 	.whatsapp{
@@ -1118,6 +1125,10 @@ figure {
 	.marbot {
 		padding: 125px 0 100px 0;
 	}
+
+	.mobi-mb-30{
+		margin-bottom: 40px;
+	}
 }
 
 
@@ -1208,3 +1219,100 @@ figure {
 
 
 
+.fix,
+.overlay-scale {
+	overflow: hidden
+}
+
+
+
+/*-------------------------------------------------------------------
+ ------------------------------- Blog  ------------------------------
+ -------------------------------------------------------------------*/
+
+.blog-post .thumb img {
+	-webkit-transition: all .3s ease-in-out 0s;
+	-o-transition: all .3s ease-in-out 0s;
+	transition: all .3s ease-in-out 0s
+}
+
+.blog-post:hover .thumb img {
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1)
+}
+
+.blog-post .content>h5 {
+	font-size: 14px
+}
+
+.blog-post .content h4 {
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 26px
+}
+
+.blog-post .content a:hover h4 {
+	color: #ff214f
+}
+
+.blog-post .content>p {
+	color: #7f7f7f;
+	font-size: 14px;
+	line-height: 25px
+}
+
+a.read-more {
+	font-size: 13px
+}
+
+a.read-more i {
+	padding-left: 5px;
+	transition: all .3s ease 0s
+}
+
+a.read-more:hover i {
+	padding-left: 10px
+}
+
+.classic .blog-post .content {
+	padding-top: 10px
+}
+
+.classic .blog-post .content>p,
+.list-blog .blog-post .content>p {
+	color: #636363
+}
+
+.classic .blog-post .divider,
+.list-blog .blog-post .divider,
+.masonry .blog-post .divider {
+	margin: 18px 0 20px
+}
+
+.classic .blog-post .divider hr.line,
+.list-blog .blog-post .divider hr.line,
+.masonry .blog-post .divider hr.line {
+	background-color: #c9c9c9
+}
+
+
+
+
+
+
+
+.date-blog{
+	position: absolute;
+    background: #22196c;
+    color: #fff;
+    padding: 6px;
+    top: 16px;
+}
+
+.blog-post a{
+	display: block;
+}
+.blog-post a img{
+	width: 100%;
+}
